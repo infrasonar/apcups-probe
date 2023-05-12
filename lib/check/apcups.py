@@ -19,7 +19,6 @@ async def check_apcups(
         asset: Asset,
         asset_config: dict,
         check_config: dict) -> dict:
-    
     state = await get_data(asset, asset_config, check_config, QUERIES)
 
     if not any(state.values()):
@@ -30,7 +29,7 @@ async def check_apcups(
     item = {
         k: v
         for items in state.values()
-        for item in items    
+        for item in items
         for k, v in item.items()
     }
     item['name'] = 'ups'
