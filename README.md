@@ -3,6 +3,8 @@
 
 # InfraSonar APC UPS Probe
 
+Documentation: https://docs.infrasonar.com/collectors/probes/apcups/
+
 ## Environment variable
 
 Variable            | Default                        | Description
