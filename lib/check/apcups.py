@@ -5,14 +5,14 @@ from ..snmpclient import get_snmp_client
 from ..snmpquery import snmpquery
 
 QUERIES = (
-    MIB_INDEX['PowerNet-MIB']['upsAdvBattery'],
-    MIB_INDEX['PowerNet-MIB']['upsAdvIdent'],
-    MIB_INDEX['PowerNet-MIB']['upsAdvInput'],
-    MIB_INDEX['PowerNet-MIB']['upsAdvOutput'],
-    MIB_INDEX['PowerNet-MIB']['upsBasicBattery'],
-    MIB_INDEX['PowerNet-MIB']['upsBasicIdent'],
-    MIB_INDEX['PowerNet-MIB']['upsBasicInput'],
-    MIB_INDEX['PowerNet-MIB']['upsBasicOutput'],
+    (MIB_INDEX['PowerNet-MIB']['upsAdvBattery'], False),
+    (MIB_INDEX['PowerNet-MIB']['upsAdvIdent'], False),
+    (MIB_INDEX['PowerNet-MIB']['upsAdvInput'], False),
+    (MIB_INDEX['PowerNet-MIB']['upsAdvOutput'], False),
+    (MIB_INDEX['PowerNet-MIB']['upsBasicBattery'], False),
+    (MIB_INDEX['PowerNet-MIB']['upsBasicIdent'], False),
+    (MIB_INDEX['PowerNet-MIB']['upsBasicInput'], False),
+    (MIB_INDEX['PowerNet-MIB']['upsBasicOutput'], False),
 )
 
 
